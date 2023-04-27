@@ -1,0 +1,19 @@
+<header>
+  <app-top-menu-navbar
+    [links$]="topNavbarLinks$"
+    (urlLink)="navigateTo($event)"
+  ></app-top-menu-navbar>
+</header>
+<main>
+  <div *ngIf="status$ | async as storeStatus">
+    <app-starbucks-loader
+      *ngIf="
+        storeStatus === STATUS.Init || storeStatus === STATUS.Loading;
+        else outlet
+      "
+    ></app-starbucks-loader>
+  </div>
+  <ng-template #outlet>
+    <router-outlet></router-outlet>
+  </ng-template>
+</main>

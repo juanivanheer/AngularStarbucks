@@ -1,0 +1,12 @@
+<div *ngIf="getSelectedMenu$ | async as menuBase">
+  <section class="sb-menu__container" *ngFor="let menu of menuBase">
+    <h2 class="sb-menu__title">{{ menu.mainTitle }}</h2>
+    <hr class="sb-menu__hr-divisor" />
+    <div class="sb-grid__container">
+      <app-card
+        [menu]="menu.subCategories"
+        (selectedMenu)="setSelectedMenu($event)"
+      ></app-card>
+    </div>
+  </section>
+</div>

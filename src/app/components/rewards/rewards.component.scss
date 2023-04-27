@@ -1,0 +1,11 @@
+iframe {
+  @media (max-width: 450px) {
+    clip-path: polygon(95% 9%, 98% 207%, -20% 100%, 0% 9%);
+  }
+  display: block;
+  background: transparent;
+  border: none;
+  height: calc(100vh - 30px);
+  width: 100%;
+  clip-path: polygon(98% 12%, 99% 207%, -20% 100%, 0% 12%);
+}
