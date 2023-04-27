@@ -1,6 +1,6 @@
-# WERFEN Test Case
+# Simple Starbucks App with Angular
 
-This project includes the resolution to the evaluation determined by Werfen. In the following README I'll detail on which packages were used and how was my way of thinking during the assembly of the project.
+In the following README I'll detail on which packages were used and how was my way of thinking during the assembly of the project.
 
 ## Motivation
 
